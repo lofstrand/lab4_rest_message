@@ -21,7 +21,7 @@ public class MessagesTests {
 
     RestTemplate restTemplate = new RestTemplate();
     ObjectMapper objectMapper = new ObjectMapper();
-
+/*
     @Test
     @SuppressWarnings("unchecked")
     public void getAllMessages() {
@@ -88,5 +88,5 @@ public class MessagesTests {
                 System.out.println("Sender: " + msg.getSender().getUsername() + ", Receiver: " + msg.getReceiver().getUsername() + ", [" + msg.getContent() + "]");
         }
     }
-
+*/
 }
