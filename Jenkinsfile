@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-                git 'https://github.com/lofstrand/lab4_rest_users.git'
+                git 'https://github.com/lofstrand/lab4_rest_messages.git'
                 sh '''
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
