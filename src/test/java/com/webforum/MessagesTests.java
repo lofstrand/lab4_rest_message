@@ -16,12 +16,12 @@ import java.util.Collection;
 
 public class MessagesTests {
 
-    public static final String REST_USERS_URI = "http://localhost:8080/api/users";
-    public static final String REST_MESSAGES_URI = "http://localhost:8082/api/messages";
+    public static final String REST_USERS_URI = "http://192.168.99.100:8080/api/users";
+    public static final String REST_MESSAGES_URI = "http://192.168.99.100:8082/api/messages";
 
     RestTemplate restTemplate = new RestTemplate();
     ObjectMapper objectMapper = new ObjectMapper();
-/*
+
     @Test
     @SuppressWarnings("unchecked")
     public void getAllMessages() {
@@ -88,5 +88,4 @@ public class MessagesTests {
                 System.out.println("Sender: " + msg.getSender().getUsername() + ", Receiver: " + msg.getReceiver().getUsername() + ", [" + msg.getContent() + "]");
         }
     }
-*/
 }
